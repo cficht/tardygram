@@ -1,8 +1,6 @@
-const { getAgent } = require('../db/data-helpers');
-
+const { getUser, getAgent } = require('../db/data-helpers');
 const request = require('supertest');
 const app = require('../lib/app');
-const User = require('../lib/models/User');
 
 describe('auth routes', () => {
 
@@ -25,22 +23,18 @@ describe('auth routes', () => {
   });
 
   it('login user', async() => {
-    await User.create({
-      username: 'Chris',
-      password: 'abc123',
-      profilePhotoUrl: 'http://https://placekitten.com/200/287'
-    });
+    const user = await getUser({ username: 'Chris' });
     return request(app)
       .post('/api/v1/auth/login')
       .send({
-        username: 'Chris',
+        username: user.username,
         password: 'abc123'
       })
       .then(res => {
         expect(res.body).toEqual({
           _id: expect.any(String),
-          username: 'Chris',
-          profilePhotoUrl: 'http://https://placekitten.com/200/287',
+          username: user.username,
+          profilePhotoUrl: user.profilePhotoUrl,
           __v: 0
         });
       });
@@ -58,5 +52,5 @@ describe('auth routes', () => {
         });
       });
   });
-  
+
 });

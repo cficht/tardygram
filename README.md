@@ -91,10 +91,10 @@
 [X] authorize method  (User model)
 [X] seed data (seed)
 [X] login route (auth route)
-[] agent (data-helpers)
-[] findByToken method (User model)
-[] ensureAuth middleware (cookie-parser) (ensure-auth)
-[] verify route (auth route)
+[X] agent (data-helpers)
+[X] findByToken method (User model)
+[X] ensureAuth middleware (cookie-parser) (ensure-auth)
+[X] verify route (auth route)
 
 ### Post (gram) Model and post (grams) routes
 

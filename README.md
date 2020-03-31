@@ -84,6 +84,7 @@
 
 ### User Model and auth routes
 
+[X] create User model
 [] hash password with virtual (User model)
 [] create auth token with jwt (User model)
 [] signup route (auth route)

@@ -99,7 +99,7 @@
 ### Post (gram) Model and post (grams) routes
 
 [X] Gram model
-[] grams post route
+[X] grams post route
 [] grams get all route
 [] grams get (id) route
 [] grams patch route

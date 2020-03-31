@@ -102,7 +102,7 @@
 [X] grams get all route
 [X] grams get (id) route - UPDATE TO GET COMMENTS
 [X] grams patch route
-[] grams delete route
+[X] grams delete route
 [] grams popular aggregate route
 
 ### Comment Model and comments routes

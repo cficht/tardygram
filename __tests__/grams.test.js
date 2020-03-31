@@ -45,7 +45,7 @@ describe('grams routes', () => {
       });
   });
 
-  it('updates a post caption', async() => {
+  it('updates a grams caption', async() => {
     const user = await getUser({ username: 'Chris' });
     const gram = await getGram({ user: user._id });
     return getAgent()
@@ -54,7 +54,16 @@ describe('grams routes', () => {
       .then(res => {
         expect(res.body).toEqual({ ...gram, caption: 'Words are changing' });
       });
+  });
 
+  it('deletes a gram', async() => {
+    const user = await getUser({ username: 'Chris' });
+    const gram = await getGram({ user: user._id });
+    return getAgent()
+      .delete(`/api/v1/grams/${gram._id}`)
+      .then(res => {
+        expect(res.body).toEqual(gram);
+      });
   });
 
 });

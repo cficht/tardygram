@@ -87,7 +87,7 @@
 [X] create User model
 [X] hash password with virtual (User model)
 [X] create auth token with jwt (User model)
-[] signup route (auth route)
+[X] signup route (auth route)
 [] authorize method  (User model)
 [] seed data (seed)
 [] login route (auth route)

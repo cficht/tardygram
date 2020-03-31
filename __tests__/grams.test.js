@@ -45,4 +45,16 @@ describe('grams routes', () => {
       });
   });
 
+  it('updates a post caption', async() => {
+    const user = await getUser({ username: 'Chris' });
+    const gram = await getGram({ user: user._id });
+    return getAgent()
+      .patch(`/api/v1/grams/${gram._id}`)
+      .send({ caption: 'Words are changing' })
+      .then(res => {
+        expect(res.body).toEqual({ ...gram, caption: 'Words are changing' });
+      });
+
+  });
+
 });

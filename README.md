@@ -42,7 +42,6 @@
   * responds with a post by id
   * should include the populated user
   * should include all comments associated with the post (populated with commenter)
-    * HINT: You'll need to make two separate queries and a `Promise.all`
 * `PATCH /posts/:id`
   * requires authentication
   * only can update the post caption
@@ -102,7 +101,7 @@
 [X] grams post route
 [X] grams get all route
 [X] grams get (id) route - UPDATE TO GET COMMENTS
-[] grams patch route
+[X] grams patch route
 [] grams delete route
 [] grams popular aggregate route
 

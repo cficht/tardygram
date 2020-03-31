@@ -85,8 +85,8 @@
 ### User Model and auth routes
 
 [X] create User model
-[] hash password with virtual (User model)
-[] create auth token with jwt (User model)
+[X] hash password with virtual (User model)
+[X] create auth token with jwt (User model)
 [] signup route (auth route)
 [] authorize method  (User model)
 [] seed data (seed)

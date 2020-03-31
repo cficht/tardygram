@@ -100,8 +100,8 @@
 
 [X] Gram model
 [X] grams post route
-[] grams get all route
-[] grams get (id) route
+[X] grams get all route
+[X] grams get (id) route - UPDATE TO GET COMMENTS
 [] grams patch route
 [] grams delete route
 [] grams popular aggregate route

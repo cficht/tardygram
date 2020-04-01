@@ -100,16 +100,16 @@
 [X] Gram model
 [X] grams post route
 [X] grams get all route
-[X] grams get (id) route - UPDATE TO GET COMMENTS
-[X] grams patch route - ONLY CAPTION?
+[X] grams get (id) route
+NEXT [X] grams patch route - ONLY CAPTION?
 [X] grams delete route
-[] grams popular aggregate route
+NEXT [] grams popular aggregate route
 
 ### Comment Model and comments routes
 
 [X] Comment model
 [X] comments post route
-[X] comments delete route
+NEXT [X] comments delete route - UPDATE TO MAKE SURE USER IS OWNER
 
 ### users routes
 

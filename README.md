@@ -107,9 +107,9 @@
 
 ### Comment Model and comments routes
 
-[] Comment model
-[] comments post route
-[] comments delete route
+[X] Comment model
+[X] comments post route
+[X] comments delete route
 
 ### users routes
 

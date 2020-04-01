@@ -113,7 +113,7 @@
 
 ### users routes
 
-[] get popular aggregate route
+[X] get popular aggregate route
 [] get prolific aggregate route
 [] get leader aggregate route
 [] get impact aggregate route

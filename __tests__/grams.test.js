@@ -52,7 +52,7 @@ describe('grams routes', () => {
       });
   });
 
-  it('updates a grams caption', async() => {
+  it('updates a grams caption if trying to update a caption', async() => {
     const user = await getUser({ username: 'Chris' });
     const gram = await getGram({ user: user._id });
     return getAgent()
@@ -60,6 +60,19 @@ describe('grams routes', () => {
       .send({ caption: 'Words are changing' })
       .then(res => {
         expect(res.body).toEqual({ ...gram, caption: 'Words are changing' });
+      });
+  });
+
+  it('throws an error if trying to update anything other than a caption', async() => {
+    const user = await getUser({ username: 'Chris' });
+    const gram = await getGram({ user: user._id });
+    return getAgent()
+      .patch(`/api/v1/grams/${gram._id}`)
+      .send({ photoUrl: 'https://www.placecage.com/200/300' })
+      .then(res => {
+        expect(res.body).toEqual({      
+          'message': 'Can only update captions',
+          'status': 500 });
       });
   });
 

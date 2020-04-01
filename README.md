@@ -101,7 +101,7 @@
 [X] grams post route
 [X] grams get all route
 [X] grams get (id) route
-NEXT [X] grams patch route - ONLY CAPTION?
+[X] grams patch route
 [X] grams delete route
 NEXT [] grams popular aggregate route
 

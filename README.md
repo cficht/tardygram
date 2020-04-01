@@ -101,7 +101,7 @@
 [X] grams post route
 [X] grams get all route
 [X] grams get (id) route - UPDATE TO GET COMMENTS
-[X] grams patch route
+[X] grams patch route - ONLY CAPTION?
 [X] grams delete route
 [] grams popular aggregate route
 

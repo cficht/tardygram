@@ -103,7 +103,7 @@
 [X] grams get (id) route
 [X] grams patch route
 [X] grams delete route
-NEXT [] grams popular aggregate route
+[X] grams popular aggregate route
 
 ### Comment Model and comments routes
 

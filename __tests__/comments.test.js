@@ -21,8 +21,7 @@ describe('comments routes', () => {
 
   it('deletes a comment', async() => {
     const user = await getUser({ username: 'Chris' });
-    const gram = await getGram({ user: user._id });
-    const comment = await getComment({ post: gram._id });
+    const comment = await getComment({ commentBy: user._id });
     return getAgent()
       .delete(`/api/v1/comments/${comment._id}`)
       .then(res => {

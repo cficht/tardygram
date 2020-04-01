@@ -109,7 +109,7 @@ NEXT [] grams popular aggregate route
 
 [X] Comment model
 [X] comments post route
-NEXT [X] comments delete route - UPDATE TO MAKE SURE USER IS OWNER
+[X] comments delete route
 
 ### users routes
 

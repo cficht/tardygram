@@ -43,5 +43,17 @@ describe('users routes', () => {
         });
       });
   });
+
+  it('gets the 10 users with highest average comments per post', async() => {
+    return request(app)
+      .get('/api/v1/users/impact')
+      .then(res => {
+        expect(res.body).toHaveLength(10);
+        expect(res.body).toContainEqual({
+          _id: expect.any(String),
+          avgCommentsPerPost: expect.any(Number)
+        });
+      });
+  });
   
 });

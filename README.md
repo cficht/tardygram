@@ -115,5 +115,5 @@
 
 [X] get popular aggregate route
 [X] get prolific aggregate route
-[] get leader aggregate route
-[] get impact aggregate route
+[X] get leader aggregate route
+[X] get impact aggregate route
